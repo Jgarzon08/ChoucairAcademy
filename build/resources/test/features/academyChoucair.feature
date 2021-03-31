@@ -8,5 +8,11 @@
 
   Scenario: Search for the automation course
     Given Than Julian wants to learn automation at the academy choucair
-    When He search for the course Foundation Express on the choucair academy platform
-    Then he finds the course called resources Foundation Express
+    | strUser   | strPassword   |
+    | 1073700583| Choucair2021* |
+    When He search for the course on the choucair academy platform
+    | strCourse             |
+    | Foundation Express    |
+    Then he finds the course called resources
+    | strCourse             |
+    | Foundation Express    |

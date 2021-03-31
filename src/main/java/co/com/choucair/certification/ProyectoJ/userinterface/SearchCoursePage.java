@@ -1,10 +1,10 @@
 package co.com.choucair.certification.ProyectoJ.userinterface;
 
-import net.serenitybdd.core.pages.PageObject;
+
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class SearchCoursePage extends PageObject {
+public class SearchCoursePage {
     public static final Target BUTTON_CYC = Target.the("Select the section courses and certifications")
             .located(By.xpath("//div[@id='certificaciones']//strong"));
 
